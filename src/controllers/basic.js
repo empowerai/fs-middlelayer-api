@@ -164,7 +164,7 @@ function postRequest(res, postObject, fieldsObj, responseKey, requestKey, reques
 	const cn = res.contCn;
 	const addressField = fieldsObj[requestKey];
 	addressField.contact = cn;
-	const addressURL = `${SUDS_API_URL}${requestPath}/`;
+	const addressURL = `${SUDS_API_URL}${requestPath}`;
 	postObject[requestPath].request = addressField;
 	const createAddressOptions = {
 		method: 'POST',
