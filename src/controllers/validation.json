@@ -301,7 +301,8 @@
               "basicField": "purpose",
               "default": "No description supplied",
               "fromIntake":false,
-              "madeOf":["activityDescription","locationDescription","startDateTime","endDateTime"]
+              "madeOf":["activityDescription","locationDescription","startDateTime","endDateTime"],
+              "store": ["basic:/application]
             }
         },
         "required": ["activityDescription", "locationDescription", "startDateTime", "endDateTime", "numberParticipants"]
@@ -474,7 +475,7 @@
                 "basicField":"epermitId",
                 "default":"",
                 "fromIntake":false,
-                "madeOf":["region","forest","00000"],
+                "madeOf":["region","forest"],
                 "store":["basic:/application"],
                 "type" : "string"
             },
