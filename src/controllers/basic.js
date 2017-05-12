@@ -267,11 +267,11 @@ function postToBasic(req, res, sch, body){ //Should remove control number once w
 			if (!orgName){
 				orgName = 'abc';
 			}
-			existingContactCheck = `${SUDS_API_URL}/contact/orgcode/${orgName}/`;
+			existingContactCheck = `${SUDS_API_URL}/contact/orgcode/${orgName}`;
 		}
 		else {
 			const lastName = body.applicantInfo.lastName;
-			existingContactCheck = `${SUDS_API_URL}/contact/lastname/${lastName}/`;
+			existingContactCheck = `${SUDS_API_URL}/contact/lastname/${lastName}`;
 		}
 
 		const getContactOptions = {
