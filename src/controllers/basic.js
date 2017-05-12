@@ -287,8 +287,8 @@ function postToBasic(req, res, sch, body){ //Should remove control number once w
 		};
 		request(getContactOptions)
 		.then(function(res){
-			if (res.contCN){
-				Promise.resolve(res.contCN);
+			if (res.contCn){
+				Promise.resolve(res.contCn);
 			}
 			else {
 				return createContact(fieldsObj, true, postObject);
