@@ -1,0 +1,17 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - aws-s3-zipper > archiver > lodash:
+        patched: '2018-07-17T07:17:23.014Z'
+    - aws-s3-zipper > archiver > archiver-utils > lodash:
+        patched: '2018-07-17T07:17:23.014Z'
+    - aws-s3-zipper > archiver > zip-stream > lodash:
+        patched: '2018-07-17T07:17:23.014Z'
+    - aws-s3-zipper > archiver > zip-stream > archiver-utils > lodash:
+        patched: '2018-07-17T07:17:23.014Z'
+  'npm:mime:20170907':
+    - aws-s3-zipper > s3 > mime:
+        patched: '2018-07-17T07:17:23.014Z'
